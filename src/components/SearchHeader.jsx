@@ -17,10 +17,10 @@ const SearchHeader = () => {
   }, [keyword]);
 
   return (
-    <header className='w-full flex p-4 text-2xl border-b border-zinz-600 mb-4'>
+    <header className='w-full flex p-4 text-2xl mb-4'>
       <Link to='/moontube' className='flex items-center'>
         <BsYoutube className='text-4xl text-red' />
-        <h1 className='font-bold ml-2 text-3xl'>Youtube</h1>
+        <h1 className='ml-2 text-3xl'>Youtube</h1>
       </Link>
       <form onSubmit={handleSubmit} className='w-full flex justify-center'>
         <input

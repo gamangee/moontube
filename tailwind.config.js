@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       colors: {
         red: '#ff0000',
+        black: '#0f0f0f',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

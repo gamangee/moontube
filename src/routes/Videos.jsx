@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import VideoCard from '../components/VideoCard';
-import FakeYoutube from '../api/fakeYoutubeClient';
-import Youtube from '../api/youtube';
 import { useYoutubeApi } from '../context/YoutubeApiContext';
 
 const Videos = () => {
   const { keyword } = useParams();
   const { youtube } = useYoutubeApi();
-  // useQuery : 비동기 상태 관리 라이브러리
 
   const {
     isLoading,
@@ -23,7 +20,7 @@ const Videos = () => {
       {isLoading && <p>Loading...</p>}
       {error && <p>Error</p>}
       {!isLoading && videos && (
-        <ul>
+        <ul className='grid grid-cols-1 gap-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} />
           ))}
