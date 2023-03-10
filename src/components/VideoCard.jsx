@@ -1,12 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { DateFormatter } from '../util/date';
 
-const VideoCard = ({ video }) => {
+const VideoCard = ({ video, type }) => {
   const { title, thumbnails, channelTitle, publishedAt } = video.snippet;
+  const navigate = useNavigate();
+  const isList = type === 'list';
+
   return (
-    <li>
+    <li
+      className={isList ? 'flex gap-4 ml-4 mb-4' : ''}
+      onClick={() =>
+        navigate(`/moontube/videoDetail/${video.id}`, { state: { video } })
+      }
+    >
       <img
-        className='w-full rounded-md'
+        className={isList ? 'w-60' : 'w-full rounded-md'}
         src={thumbnails.medium.url}
         alt={title}
       />

@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Videos />,
       },
       {
-        path: '/moontube/videos/:videoId',
+        path: '/moontube/videoDetail/:videoId',
         element: <VideoDetail />,
       },
     ],

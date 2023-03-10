@@ -9,7 +9,7 @@ const SearchHeader = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/moontube/search/${value}`);
+    navigate(`/moontube/videos/${value}`);
   };
 
   useEffect(() => {
