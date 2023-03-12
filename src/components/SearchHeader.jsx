@@ -24,13 +24,13 @@ const SearchHeader = () => {
       </Link>
       <form onSubmit={handleSubmit} className='w-full flex justify-center'>
         <input
-          className='w-7/12 p-2 outline-none bg-black text-gray-50'
+          className='w-4/12 p-2 outline-none bg-[#121212] text-gray-50 rounded-l-full border-[#222] border-2'
           type='text'
-          placeholder='search...'
+          placeholder='검색'
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
-        <button className='bg-zinc-600 px-4'>
+        <button className='bg-[#222] px-6 rounded-r-full'>
           <BsSearch />
         </button>
       </form>

@@ -1,0 +1,87 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "jCsRRo94RNuvnWueiVVk269OMmQ",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "spyhYCyGWO3EenBKWNKe7C6rHrA",
+      "id": "goCoXdp7k2E",
+      "snippet": {
+        "publishedAt": "2023-03-10T03:00:11Z",
+        "channelId": "UClG8odDC8TS6Zpqk9CGVQiQ",
+        "title": "Fortnite Chapter 4 Season 2 MEGA Cinematic Trailer",
+        "description": "Watch the Fortnite Battle Royale Chapter 4 Season 2 cinematic trailer and then play the game - https://www.fortnite.com/chapter-4-season-2\n\nBecome MEGA in Fortnite Battle Royale Chapter 4 Season 2. Ride the grind rails of “MEGA City” and swerve on its streets on a sports bike. Go beyond the neon towers to the rest of the new biome: cause Havoc at “Steamy Springs,” drive a \"\"Nitro Drifter\"\" to the \"\"Drift Ridge\"\" car track, sharpen your \"\"Kinetic Blade\"\" skills at “Kenjutsu Crossing,” and more!\n\n#Fortnite #FortniteCinematicTrailer #FortniteMEGA",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/goCoXdp7k2E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/goCoXdp7k2E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/goCoXdp7k2E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/goCoXdp7k2E/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/goCoXdp7k2E/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Fortnite",
+        "tags": [
+          "yt:cc=on",
+          "fortnite",
+          "fortnite trailer",
+          "fortnite season trailer",
+          "fortnite cinematic trailer",
+          "fortnite chapter 4 season 2",
+          "fortnite chapter 4 season 2 cinematic trailer",
+          "fortnite chapter 4 season 2 trailer",
+          "fortnite chapter 4 season 2 mega",
+          "fortnite mega",
+          "fortnite chapter 4 season 2 mega trailer"
+        ],
+        "categoryId": "20",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Fortnite Chapter 4 Season 2 MEGA Cinematic Trailer",
+          "description": "Watch the Fortnite Battle Royale Chapter 4 Season 2 cinematic trailer and then play the game - https://www.fortnite.com/chapter-4-season-2\n\nBecome MEGA in Fortnite Battle Royale Chapter 4 Season 2. Ride the grind rails of “MEGA City” and swerve on its streets on a sports bike. Go beyond the neon towers to the rest of the new biome: cause Havoc at “Steamy Springs,” drive a \"\"Nitro Drifter\"\" to the \"\"Drift Ridge\"\" car track, sharpen your \"\"Kinetic Blade\"\" skills at “Kenjutsu Crossing,” and more!\n\n#Fortnite #FortniteCinematicTrailer #FortniteMEGA"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT1M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "4669332",
+        "likeCount": "97217",
+        "favoriteCount": "0",
+        "commentCount": "7147"
+      },
+      "player": {
+        "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/goCoXdp7k2E\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}

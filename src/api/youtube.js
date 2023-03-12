@@ -10,8 +10,35 @@ export default class Youtube {
 
   async channelImgURL(id) {
     return this.apiClient
-      .channels({ params: { part: 'snippet', id } })
+      .channels({
+        params: {
+          part: ['snippet', 'statistics', 'contentDetails'],
+          id,
+        },
+      })
       .then((res) => res.data.items[0].snippet.thumbnails.default.url);
+  }
+
+  async channelDetail(id) {
+    return this.apiClient
+      .channels({
+        params: {
+          part: ['snippet', 'statistics', 'contentDetails'],
+          id,
+        },
+      })
+      .then((res) => res.data.items[0]);
+  }
+
+  async videoDetail(videoId) {
+    return this.apiClient
+      .videoDetail({
+        params: {
+          part: ['snippet', 'statistics', 'contentDetails'],
+          videoId,
+        },
+      })
+      .then((res) => res.items.snippet);
   }
 
   async relatedVideos(id) {
@@ -19,7 +46,7 @@ export default class Youtube {
       .search({
         params: {
           part: 'snippet',
-          maxResults: 25,
+          maxResults: 10,
           type: 'video',
           relatedToVideoId: id,
         },
@@ -29,12 +56,23 @@ export default class Youtube {
       );
   }
 
+  async commentThreads(videoId) {
+    return this.apiClient
+      .commentThreads({
+        params: {
+          part: 'snippet',
+          videoId,
+        },
+      })
+      .then((res) => res.data.items);
+  }
+
   async #searchKeyword(keyword) {
     return this.apiClient
       .search({
         params: {
           part: 'snippet',
-          maxResults: 25,
+          maxResults: 10,
           type: 'video',
           q: keyword,
         },
