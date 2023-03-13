@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
 import { useYoutubeApi } from '../context/YoutubeApiContext';
 import { DateFormatter } from '../util/date';
+import { ViewCount } from '../util/views';
 
 const VideoCard = ({ video, type }) => {
   const { title, thumbnails, channelTitle, publishedAt, channelId } =
@@ -48,11 +49,21 @@ const VideoCard = ({ video, type }) => {
             )}
           </div>
           <div>
-            <div className='font-semibold my-2 line-clamp-2'>{title}</div>
+            <div
+              className={
+                isList ? 'font-semibold my-2' : 'font-semibold my-2 h-12'
+              }
+            >
+              {title.length > 60 ? title.slice(0, 60) + '...' : title}
+            </div>
             <p className='text-sm opacity-70'>{channelTitle}</p>
-            <p className='text-sm opacity-70'>
-              {DateFormatter(publishedAt, 'ko')}
-            </p>
+            <div className='text-sm opacity-70 flex items-center space-x-1'>
+              <span>
+                {ViewCount(channelDetail?.statistics?.viewCount) || ''}
+              </span>
+              <span className='block w-1 h-1 aspect-square rounded bg-white'></span>
+              <span>{DateFormatter(publishedAt, 'ko')}</span>
+            </div>
           </div>
         </div>
       </div>
