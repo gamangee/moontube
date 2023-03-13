@@ -17,9 +17,6 @@ const VideoCard = ({ video, type }) => {
     { staleTime: 1000 * 60 * 5 }
   );
 
-  // const channelImg = channelDetail.snippet.thumbnails.default.url;
-  // console.log(channelDetail);
-
   return (
     <li
       className={isList ? 'flex gap-4 ml-4 mb-4' : ''}
